@@ -61,8 +61,12 @@
         </plugins>
     </build>
 
-    <dependencies>
-
-    </dependencies>
+    <distributionManagement>
+ 	<repository>
+  		<id>github</id>
+  		<name>test</name>
+  		<url>https://maven.pkg.github.com/shahedullahm/test</url>
+ 	</repository>
+</distributionManagement>
 
 </project>
