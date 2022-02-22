@@ -25,3 +25,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
       run: mvn install -DskipTests=true -f pom.xml
+      
+    - name: Publish to GitHub Packages
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      run: mvn deploy -DskipTests=true -f pom.xml
